@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "affected-key-hashes.schema.json",
+  "title": "Affected Key Hashes",
+  "description": "A list of known compromised Cardano key hashes (28-byte Blake2b-224 hashes encoded as hex strings).",
+  "type": "object",
+  "properties": {
+    "keyHashs": {
+      "type": "array",
+      "description": "Array of compromised key hashes.",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{56}$",
+        "description": "A 28-byte key hash encoded as a 56-character lowercase hex string."
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["keyHashs"],
+  "additionalProperties": false
+}
