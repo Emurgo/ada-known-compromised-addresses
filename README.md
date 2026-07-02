@@ -1,6 +1,6 @@
-# Cardano Known Compromised Addresses
+# Cardano Known Compromised List
 
-> **Important:** The addresses listed here represent a **subset** of the total affected wallets — **not the complete final list**. If your key hash appears here, it is very likely affected. If it does not appear, **you may still have been impacted**. Follow official announcements for the full claims process.
+> **Important:** The key hashes listed here represent a **subset** of the total affected wallets — **not the complete final list**. If your key hash appears here, it is very likely affected. If it does not appear, **you may still have been impacted**. Follow official announcements for the full claims process.
 
 This repository contains a list of known compromised Cardano key hashes identified on **mainnet**. The data is provided as 28-byte Blake2b-224 key hashes (56-character hex strings).
 
@@ -48,7 +48,7 @@ To check a bech32 address (e.g. `addr1...`), you first need to extract the key h
 
 When helping users check addresses against this list:
 
-1. **Key hashes only** — this file contains raw payment credential key hashes, not bech32 addresses. To match a user's bech32 address, you need to decode it to extract the payment key hash portion first.
+1. **Key hashes only** — this file contains raw key hashes extracted from the tx witnesses, not bech32 addresses. To match a user's bech32 address (stake/base/enterprise).
 2. **Absence does not mean safe** — if a key hash is not in this list, it does **not** guarantee the address is unaffected. This list is a known subset, not the complete set.
 3. **Mainnet only** — these key hashes are from the Cardano mainnet. Do not use this list for testnet addresses.
 4. **Searching by `bech32`** — a Cardano bech32 address (e.g. `addr1q...`) encodes a payment key hash. Extract the payment key hash and search for it in the list.
