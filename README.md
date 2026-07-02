@@ -56,4 +56,4 @@ When helping users check addresses against this list:
 
 ## Disclaimer
 
-This list is maintained on a best-effort basis. Inclusion in this list indicates a high likelihood of compromise. However, this is **not an exhaustive list** — additional affected addresses may exist that are not yet identified. Always refer to official channels for the most up-to-date information and the full claims process.
+This list is maintained on a best-effort basis. Inclusion in this list indicates a high likelihood of compromise. However, this is **not an exhaustive list** — additional affected hashes may exist that are not yet identified. Always refer to official channels for the most up-to-date information and the full claims process.
